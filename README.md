@@ -2,30 +2,42 @@
 Module 20 - Supervised Machine Learning
 
 # Overview
-This dataset delves into the price change percentage in cryptocurrency across various time frames, spanning from as brief as 24 hours to as extensive as 1 year. Employing standard scalar normalization facilitates a unified scale for comprehensive data evaluation. Leveraging the Kmeans model enables us to pinpoint the optimal clustering solution for the data. Subsequently, the Principal Component Analysis (PCA) was performed using three key features, followed by the application of a Kmeans model to contrast using all available features versus scaling down to fewer features using the PCA.
+This historical dataset of lending activity from a peer-to-peer lending services company was used to build a model that can identify the creditworthiness of borrowers.
 
 # Navigation
-* Resources 
-    * crypto_market_data - provided csv dataset.
-    * Pictures
-         * elbow_plots - png of scatter plot comparison.
-         * scatter_plots - png of scatter plot comparison.
-* Crypto_Clustering - provided jupyter notebook file that contains the code. 
+* Credit_Risk 
+    * lending_data - provided csv dataset.
+    * credit_risk_classification - provided jupyter notebook file that contains the code.
+* README - contains final analysis.
+* report-template - template for analysis report.
 
-# Analysis
-After executing the principal component analysis with three features, approximately 88% of the variance within the dataset was successfully accounted for. Both the scaled normalized data and the PCA-transformed data demonstrated optimal performance with the application of a 4-cluster Kmeans model.
+## Overview of the Analysis
 
-<p align="center">
-<img src="https://github.com/hmmclean/Module_19_Homework/blob/main/Resources/Pictures/elbow_plots.PNG" width="1050">
-</p>
+* Explain the purpose of the analysis.
+* Explain what financial information the data was on, and what you needed to predict.
+* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
+* Describe the stages of the machine learning process you went through as part of this analysis.
+* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+
+## Results
+
+Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+
+* Machine Learning Model 1:
+  * Description of Model 1 Accuracy, Precision, and Recall scores.
 
 
-Using fewer features seemed to create tighter clusters, suggesting a reduction of noise or a focusing of predicted patterns. Overall, the PCA analysis is similar to the original normalized data, leading to an accurate representation of the data but with fewer principle components.
 
+* Machine Learning Model 2:
+  * Description of Model 2 Accuracy, Precision, and Recall scores.
 
-<p align="center">
-<img src="https://github.com/hmmclean/Module_19_Homework/blob/main/Resources/Pictures/scatter_plots.PNG" width="1050">
-</p>
+## Summary
+
+Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+* Which one seems to perform best? How do you know it performs best?
+* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+
+If you do not recommend any of the models, please justify your reasoning.
 
 # References and Resources
 * ChatGPT - https://chat.openai.com/
