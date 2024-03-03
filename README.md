@@ -64,9 +64,12 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 ## Summary
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-I would recommend model 2, with the resampled data because it has the lowest false negatives, which would mean predicting high risk loans as healthy. 
 * Which one seems to perform best? How do you know it performs best?
+     * In predicting loan risk, machine learning model 2 surpasses model 1, evident through a higher balanced accuracy score (0.993 vs. 0.952) thus indicating better overall performance.
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+     * The choice between models depends on specific goals and the relative costs of false positives vs. false negatives. For example, for financial institutions prioritizing high-risk loan detection, Model 2 is preferable due to its higher recall.
+
+* Overall, I recommend model 2 for a few reasons. First, in predicting loan risk, machine learning model 2 surpasses model 1, evident through a higher balanced accuracy score (0.993 vs. 0.952) thus indicating better overall performance. Subsequently, model 2 has fewer false negatives (4) compared to Model 1 (56) in predicting high-risk loans. This suggests that model 2 is more successful in identifying true high-risk instances and that model 2, with the resampled data, demonstrates superior performance in minimizing false negatives, making it more adept at predicting high-risk loans accurately. Furthermore, model 2 has a higher recall for high-risk loans (0.99) compared to model 1 (0.91), indicating that model 2 is better at capturing a higher proportion of actual high-risk cases. Model 2 is more effective and reliable for predicting loan risk, making it the preferred choice for financial institutions. However, there are some tradeoffs to consider, model 2 has a slightly lower precision but compensates with a notable improvement in recall. Also, there is a need to continuously evaluate and refine the model to prevent data shifts and to improve the efficacy of the model. 
   
 
 # References and Resources
